@@ -1,0 +1,15 @@
+﻿
+@*@{
+    ViewBag.Title = "TeamRanking";
+}
+
+<h2>TeamRanking</h2>*@
+
+
+
+@model List<FootballLeague.Web.Models.TeamRanking>
+@foreach (var teamRanking in Model)
+{
+    <div>@teamRanking.TeamName</div>
+    <p>@teamRanking.Points</p>
+}
